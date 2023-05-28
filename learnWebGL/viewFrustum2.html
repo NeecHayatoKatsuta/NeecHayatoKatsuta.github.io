@@ -9,8 +9,8 @@
   <script src="../scripts/writeCommonElements.js"></script>
 
   <title>視錐台 2（成功？）</title>
-  <meta name="author" content="Nejimaki Boy">
-  <meta name="description" content="">
+  <meta name="author" content="勝田敬登">
+  <meta name="description" content="WebGLで視錐台の実装">
 
   <link rel="stylesheet" href="./styles/canvas.css">
   <script src="./scripts/webgl-utils.js" defer></script>
@@ -26,12 +26,10 @@
 
       <canvas id="canvas"></canvas>
 
-      <p>とりあえず面が裏返る問題は、OBJの面情報を下から読み込んでいたのを上からに変えて、これで解決ということにした。下から読む仕様って意味分かんないし、たぶん今までがおかしかったんだと思う。</p>
+      <p>面が裏返る問題は、OBJファイルの面情報を下から読み込んでいたのを上から読み込むように変えて解消しました。</p>
       <p><a
-          href="https://webglfundamentals.org/webgl/webgl-3d-perspective-matrix.html">参考資料のデモ</a>を見る限り、回転方向は反時計回りで正しいらしい。WebGLはYが上の右手系座標なのでこれでOKらしい、ということもググってなんとなくわかった。じゃあ今まで時計回りだったのはなんでだろう？
+          href="https://webglfundamentals.org/webgl/webgl-3d-perspective-matrix.html">参考資料のデモ</a>を見る限り、回転方向は反時計回りで正しいようです。
       </p>
-      <p>向こうのデモが視錐台を導入するまで時計回りだった理由はわかるんだけど、こっちも時計回りだった理由がわからない。視錐台を作る前は左右反転して表示されてたことになる。</p>
-      <p>釈然としないけど先に進めよう。</p>
     </section>
   </article>
 

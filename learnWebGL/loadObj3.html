@@ -9,7 +9,7 @@
   <script src="../scripts/writeCommonElements.js"></script>
 
   <title>OBJファイルを読み込む 3</title>
-  <meta name="author" content="Nejimaki Boy">
+  <meta name="author" content="勝田敬登">
   <meta name="description" content="WebGLでOBJファイルを読み込んで3Dモデルを表示する">
 
   <link rel="stylesheet" href="./styles/learnWebGL.css">
@@ -26,9 +26,9 @@
 
       <canvas id="canvas"></canvas>
 
-      <p>上手く出来たみたい。</p>
-      <p>前回の失敗の原因は、頂点座標を入れた配列の添字が 0 から始まるのに対して、OBJファイルの面情報が参照している頂点座標の番号が 1 から始まっていたことだった。</p>
-      <p>面情報を上から読み込むと面がすべて裏返ってしまったので逆から読み込んだ。</p>
+      <p>モデルの読み込みは上手く出来たようです。代わりににCanvasの解像度が小さくなってしまいました。</p>
+      <p>前回の失敗の原因は、頂点座標を入れた配列の添字が 0 から始まるのに対して、OBJファイルの面情報が参照している頂点座標の番号が 1 から始まっていたことでした。</p>
+      <p>面情報をobjファイルの上から読み込むと面がすべて裏返ってしまったので逆から読み込みました。</p>
     </section>
   </article>
 
